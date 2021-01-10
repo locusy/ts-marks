@@ -120,4 +120,60 @@ if ( div1 ) {
 interface o1 {x: number; y: string}
 interface o2 {z: number}
 
+// "target": "es6" 或者 "lib": ["es6"]
 let o: o1 & o2 = Object.assign( {}, {x: 1, y: '2'}, {z: 2} )
+
+
+
+/************************************  6、字面量类型 ***********************************/
+function setPosition(ele: HTMLElement, direction: 'left' | 'top' | 'right' | 'bottom') {}
+
+let div2 = document.querySelector( 'div' )
+if ( div2 ) {
+  setPosition( div2, 'left' )
+  setPosition( div2, 'top' )
+  setPosition( div2, 'd' )
+}
+
+
+
+/************************************  6、类型别名 ***********************************/
+type dir = 'left' | 'top' | 'right' | 'bottom'
+function setPositions(ele: HTMLElement, direction: dir) {
+  // ...
+}
+
+
+
+/************************************  7、interface和type的区别 ***********************************/
+// interface
+// 只能描述obejct/class/function的类型
+// 同名interface自动合并，利于扩展
+
+// type
+// 不能重名
+// 能描述所有数据
+
+
+
+/************************************  7、类型推导 ***********************************/
+// 这里ts会推导出函数的返回值为 100|'tang'
+function derivation(x: number, y: number) {
+  if ( x ) {
+    return 100
+  } else {
+    return 'tang'
+  }
+}
+
+
+
+/************************************  8、类型断言 ***********************************/
+// 不设置类型断言
+let img = document.querySelector('#img');
+// 访问img.src会报错
+
+// 设置类型断言 把它的类型标注的更为精确 类似于一种类型转换
+// let img = <HTMLImageElement>document.querySelector('#img');
+// 或者：
+// let img = document.querySelector('#img') as HTMLImageElement

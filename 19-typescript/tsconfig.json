@@ -4,7 +4,7 @@
     "target": "es6",
     "watch": true,
     "strictNullChecks": true,
-    // "lib": [""]
+    // "lib": ["es6"]
   },
   // ** 所有目录（包括子目录）
   // * 所有文件（也可以指定类型）
