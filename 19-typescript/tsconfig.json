@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "es6",
+    "watch": true,
+    "strictNullChecks": true,
+    // "lib": [""]
+  },
+  // ** 所有目录（包括子目录）
+  // * 所有文件（也可以指定类型）
+  "include": ["./src/**/*"]
+}

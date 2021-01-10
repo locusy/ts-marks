@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    1、虚拟dom是什么？
+      console.dir(document.querySelector('#app'))
+      dom的属性过多，性能杀手
+
+    2、为什么要用虚拟dom？
+    3、虚拟dom在vue1-3 react15/16 的发展
+    4、vue3
+
+    <!-- vue react的template都会转成js后执行 -->
+  </div>
+
+  <div id="app">happy</div>
+
+  <script type="text/javascript">
+    const ele = {
+      type: 'div',
+      children: 'happy',
+      props: {
+        id: 'app'
+      }
+    }
+    // ele进行任何的dom比对 都很快
+  </script>
+</body>
+</html>
