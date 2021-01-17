@@ -9,8 +9,8 @@
 /**
  *  重载函数类型只需要定义结构，不需要实体，类似接口
  */
-function showOrHide(el: HTMLElement, attr: 'display', value: 'block'|'none') {}
-function showOrHide(el: HTMLElement, attr: 'opacity', value: number) {}
+function showOrHide(el: HTMLElement, attr: 'display', value: 'block'|'none');
+function showOrHide(el: HTMLElement, attr: 'opacity', value: number);
 function showOrHide(el: HTMLElement, attr: any, value: any) {
   // ...
 }
@@ -20,5 +20,5 @@ let div8 = document.querySelector('div')
 if ( div8 ) {
   showOrHide(div8, 'display', 'block')
   showOrHide(div8, 'display', 'none')
-  showOrHide(div8, "opacity", 1)
+  showOrHide(div8, 'opacity', 1)
 }
