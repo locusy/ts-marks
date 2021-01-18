@@ -21,4 +21,5 @@ if ( div8 ) {
   showOrHide(div8, 'display', 'block')
   showOrHide(div8, 'display', 'none')
   showOrHide(div8, 'opacity', 1)
+  showOrHide(div8, 'opacity', 'block')
 }
