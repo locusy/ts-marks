@@ -10,3 +10,6 @@
 # 配置文件tsconfig.json放在根目录
   运行：tsc -p tsconfig.json
   或者：tsc
+
+# 
+  tsc 20-装饰器.ts --target ES5 -w --experimentalDecorators
