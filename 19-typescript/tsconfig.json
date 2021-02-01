@@ -13,6 +13,9 @@
     "allowSyntheticDefaultImports": true,
     // 允许json格式文件模块
     // "resolveJsonModule": true
+    // 启用装饰器
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
     // "lib": ["es6"]
   },
   // ** 所有目录（包括子目录）
