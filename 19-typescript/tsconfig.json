@@ -2,8 +2,17 @@
   "compilerOptions": {
     "outDir": "./dist",
     "target": "es6",
+    "module": "umd",
+    // 模块解析策略
+    // "moduleResolution": "classic",
+    "moduleResolution": "node",
     "watch": true,
     "strictNullChecks": true,
+    "allowJs": true,
+    // 允许从没有默认导出的模块中导入
+    "allowSyntheticDefaultImports": true,
+    // 允许json格式文件模块
+    // "resolveJsonModule": true
     // "lib": ["es6"]
   },
   // ** 所有目录（包括子目录）
